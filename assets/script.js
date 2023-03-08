@@ -3,7 +3,7 @@
 // add logic
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
-var submitButton = document.getElementById('submit');
+var submitButton = document.getElementById('Start');
 
 
 var questions = [
@@ -35,7 +35,7 @@ var questions = [
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 	function showQuestions(questions, quizContainer){
-		// code will go here
+		
 	}
 
 	function showResults(questions, quizContainer, resultsContainer){
@@ -53,7 +53,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 function showQuestions(questions, quizContainer){
 	// we'll need a place to store the output and the answer choices
-	var output = [];
+	var output = [localStorage];
 	var answers;
 
 	// for each question...

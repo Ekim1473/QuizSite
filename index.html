@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +9,35 @@
 
     <link rel="stylesheet" href="./assets/styles.css" />
 </head>
+
 <body>
-<div class="title"><h1>QuizSite</h1></div>
+    <div class="title">
+        <h1>QuizSite</h1>
+    </div>
 
-<div class="quizContainer">
+    <div class="quizContainer">
 
-    <div class= "main">
-        <div class="start">
-        <h1>Take The Quiz</h1>
-        <p class="p">When you are ready click the START button and show us what you know. Hurry though, there is a time limit and time is removed for every answer you get wrong. HAVE FUN!</p>
-        <button id='Start'>Start Quiz</button>
-        <div id='quiz'></div>
-        <div id='results'></div>
-
-</div>
+        <div class="main">
+            <div class="start">
+                <h1>Take The Quiz</h1>
+                <p class="p">When you are ready click the START button and show us what you know. Hurry though, there is
+                    a time limit and time is removed for every answer you get wrong. HAVE FUN!</p>
+                <button id='Start'>Start Quiz</button>
 
 
+            </div>
+            <div id='quiz'>
+                <h1 id="qHeader"></h1>
+                <div id="choices">
+
+                </div>
+            </div>
+            <div id='results'></div>
+
+        </div>
+    </div>
 
     <script src="./assets/script.js"></script>
 </body>
+
 </html>

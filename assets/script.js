@@ -55,8 +55,12 @@ for(var i = 0; i < 4; i++){
 
 });
 
-choiceEl.onclick = "button";
-console.log("button");
+choiceEl.onclick = "button"; {
+	if (choicesEl = ".answer")
+	console.log ("Correct!")
+
+} 
+console.log();
 // buttonEl.addEventListener("click", )
 
 

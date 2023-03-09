@@ -8,6 +8,19 @@ a {
     text-decoration: none;
     transition: color 0.1s;
 }
+
+.highscore {
+  display: flex;
+  align-content: center;
+};
+
+.restart{
+  display: none;
+}
+.initialTab{
+  display: none;
+  margin-top: 100px;
+}
   
 a:hover {
     color: #06fd79;
@@ -65,4 +78,7 @@ button {
     align-items:baseline;
    
   }
+
+
+
   

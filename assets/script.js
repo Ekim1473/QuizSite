@@ -45,17 +45,33 @@ submitButton.addEventListener("click", ()=>{
 startPage.style.display = "none"
 qHeaderEl.textContent = questions[0].title;
 
-
+	var buttonEl = event.target;
 
 for(var i = 0; i < 4; i++){
-	var buttonEl = document.createElement("button");
-	buttonEl.textContent = questions[0].choices[i]
-	choiceEl.appendChild(buttonEl)
-}
-
+		var buttonEl = document.createElement('button');
+		buttonEl.setAttribute('class', 'answerBtn');
+		buttonEl.textContent = questions[0].choices[i];
+		choiceEl.appendChild(buttonEl);
+		buttonEl.addEventListener ('click', selectAnswer);
+		
+	}
 });
 
-buttonEl.addEventListener ('click', selectAnswer())
+function selectAnswer(event) {
+	let text = event.target.innerText;
+
+	console.log(text);
+
+	if (text.value !== questions.answer) {
+
+		sfxRight.play();
+
+		feedbackEl.textContent = 'Correct!';
+
+	};
+};
+  
+
 	
 // function qetAnswer(event) {
 // 	var buttonEl = event.answer;
@@ -64,17 +80,16 @@ buttonEl.addEventListener ('click', selectAnswer())
 	// function  (event.target.textContent)
 // }
 
-function selectAnswer (event) {
-	let text = event.answer.textContent;
-	document.getElementById("results").innerHTML = text;
+// function selectAnswer (event) {
+// 	let text = event.answer.textContent;
+// 	document.getElementById("results").innerHTML = text;
 
-	selectAnswer();
+// 	selectAnswer();
 
-choiceEl.onclick = "button"; {
-	if (choicesEl = ".answer")
-	console.log ("Correct!")
+// choiceEl.onclick = "button"; {
+// 	if (choicesEl = ".answer")
+// 	console.log ("Correct!")
 
-} 
-console.log();
-// buttonEl.addEventListener("click", )
-};
+// } 
+// console.log();
+// // buttonEl.addEventListener("click", )
